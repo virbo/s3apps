@@ -1,0 +1,82 @@
+# ==============================================================================
+# Git Ignore for S3 File Manager
+# ==============================================================================
+
+# --- Environment & Secret Configuration ---
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# --- Python & Virtual Environment ---
+venv/
+backend/venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# --- Node / Frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/.cache/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# --- Temporary & Download Files ---
+*.tmp
+*.temp
+*.zip
+*.tar.gz
+temp/
+tmp/
+
+# --- Docker & Volumes ---
+postgres_data/
+
+# --- OS Specific Files ---
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# --- IDE / Editor Settings ---
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-workspace
+*.sublime-project
+*.swp
+*.swo
