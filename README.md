@@ -1,4 +1,4 @@
-# S3 File Manager (FastAPI + React Vite + MinIO + PostgreSQL)
+# S3 File Manager
 
 Aplikasi web modern untuk manajemen file di S3 (AWS S3, MinIO, atau compatible S3 storage) yang dilengkapi dengan sistem autentikasi login (PostgreSQL + JWT), upload, download streaming, navigasi folder/prefix bertingkat, pembuatan folder baru, share presigned URL, dan download massal dalam format ZIP.
 
@@ -153,7 +153,7 @@ npm run dev
 ### Manajemen File S3 (Memerlukan Login)
 | Method | Endpoint | Keterangan |
 | :--- | :--- | :--- |
-| `GET` | `/api/files/health` | Cek status koneksi MinIO & ketersediaan bucket |
+| `GET` | `/api/files/health` | Cek status koneksi S3 & ketersediaan bucket |
 | `GET` | `/api/files/list?prefix=` | Daftar file dan folder dalam prefix tertentu |
 | `POST` | `/api/files/upload` | Upload satu atau banyak file ke prefix aktif |
 | `POST` | `/api/files/create-folder` | Buat folder virtual baru di bawah prefix |
